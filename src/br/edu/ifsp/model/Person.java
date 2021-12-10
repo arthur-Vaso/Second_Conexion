@@ -8,53 +8,52 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="people")
+@Table(name = "people")
 public class Person {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
-	
-	@Column(name="name")
+	private Integer id;
+
+	@Column(name = "name")
 	private String name;
-	
-	@Column(name="year_old")
+
+	@Column(name = "year_old")
 	private int yearOld;
-	
-	@Column(name="adress")
+
+	@Column(name = "adress")
 	private String adress;
-	
-	
-	public int getId() {
+
+	public Integer getId() {
 		return id;
 	}
-	
-	public void setId(int id) {
+
+	public void setId(Integer id) {
 		this.id = id;
 	}
-	
+
 	public String getName() {
 		return name;
 	}
-	
+
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+
 	public int getYearOld() {
 		return yearOld;
 	}
-	
+
 	public void setYearOld(int yearOld) {
 		this.yearOld = yearOld;
 	}
-	
+
 	public String getAdress() {
 		return adress;
 	}
-	
+
 	public void setAdress(String adress) {
 		this.adress = adress;
 	}
-	
+
 }
